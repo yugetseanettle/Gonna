@@ -30,4 +30,10 @@ export default [
       "tailwindcss/classnames-order": "off", // Prettierで管理する場合
     },
   },
+  {
+    extends: "next/core-web-vitals",
+    rules: {
+      // 他のルール
+    },
+  },
 ];
