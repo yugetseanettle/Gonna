@@ -31,7 +31,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.1",
+    "eslint": "^9.16.0",
     "eslint-config-next": "15.0.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.2",
@@ -40,8 +40,5 @@
     "prettier": "^3.4.1",
     "typescript": "^5",
     "typescript-eslint": "^8.16.0"
-  },
-  "eslintConfig": {
-    "extends": "next/core-web-vitals"
   }
 }

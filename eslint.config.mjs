@@ -2,9 +2,10 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 import eslintConfigPrettier from "eslint-config-prettier";
-import tailwind from "eslint-plugin-tailwindcss";
 import js from "@eslint/js";
 import ts from "typescript-eslint";
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals.js";
+import nextTypescript from "eslint-config-next/typescript.js";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -13,27 +14,15 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   eslintConfigPrettier,
-  ...tailwind.configs["flat/recommended"],
   js.configs.recommended,
   ...ts.configs.recommended,
+  nextCoreWebVitals,
+  nextTypescript,
   {
     settings: {
       react: {
         version: "detect",
       },
-    },
-  },
-  {
-    extends: ["plugin:tailwindcss/recommended"],
-    plugins: ["tailwindcss"],
-    rules: {
-      "tailwindcss/classnames-order": "off", // Prettierで管理する場合
-    },
-  },
-  {
-    extends: "next/core-web-vitals",
-    rules: {
-      // 他のルール
     },
   },
 ];
