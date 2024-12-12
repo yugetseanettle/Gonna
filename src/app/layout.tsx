@@ -16,7 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { isDarkMode, toggleDarkMode, themes } = useTheme("indigo");
+  const { isDarkMode, toggleDarkMode, themes } = useTheme();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [themeColor] = useState<keyof typeof themes>("indigo");
 

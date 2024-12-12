@@ -1,5 +1,5 @@
 {
-  "name": "calements.app",
+  "name": "gonna-calendar.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -40,5 +40,8 @@
     "prettier": "^3.4.1",
     "typescript": "^5",
     "typescript-eslint": "^8.16.0"
+  },
+  "eslintConfig": {
+    "extends": "next/core-web-vitals"
   }
 }
